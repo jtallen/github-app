@@ -7,6 +7,7 @@ Currently only hits my [portfolio site](https://github.com/jtallen/turner-site);
 ## Tech Stack
 
 - Node.js backend with [Express](https://expressjs.com/) framework.
+- [Axios](https://axios-http.com/) - Promise and HTTP library.
 - [Jest](https://jestjs.io/) for testing.
 
 ## Usage
@@ -17,7 +18,7 @@ Clone the project using
 git clone https://github.com/jtallen/github-app.git
 ```
 
-Install dependencies using 
+Install dependencies using
 
 ```
 npm install
