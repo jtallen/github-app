@@ -1,6 +1,11 @@
 const githubClient = require('../src/githubClient');
 const constants = require('../src/constants');
 
+// Notes: as turner-site changes, these tests will become obsolete
+// a more static repo would be useful for test cases
+
+// TODO: add test for error, add integration/end to end tests
+
 // tests for getPullRequests
 test('Number of open pull requests should be 2 for turner-site repo', async () => {
   const output = await githubClient.getPullRequests(constants.pullsUrl);
