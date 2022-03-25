@@ -1,5 +1,4 @@
 const express = require('express');
-const axios = require('axios');
 
 const constants = require('./src/constants');
 const githubClient = require('./src/githubClient');
