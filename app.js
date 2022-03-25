@@ -1,15 +1,15 @@
 const express = require('express');
 const axios = require('axios');
 
-const constants = require('./constants/data');
-const pullRequests = require('./src/getPullRequests');
+const constants = require('./src/constants');
+const githubClient = require('./src/githubClient');
 
 const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
   res.header('Content-Type', 'application/json');
-  pullRequests
+  githubClient
     .getPullRequests(constants.pullsUrl)
     .then((output) => res.send(JSON.stringify(output, null, 2)));
 });
